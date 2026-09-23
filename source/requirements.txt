@@ -1,10 +1,30 @@
+# ---- API ----
 fastapi>=0.115.0
 uvicorn[standard]>=0.30.0
 python-multipart>=0.0.12
 python-dotenv>=1.0.1
 pydantic>=2.9.0
+pydantic-settings>=2.5.0
 aiofiles>=23.2.1
-langchain-community>=0.3.0
-pymupdf>=1.24.3
-motor>=3.4.0
 
+# ---- Document processing ----
+langchain-community>=0.3.0
+langchain-text-splitters>=0.3.0
+pymupdf>=1.24.3
+
+# ---- Storage ----
+motor>=3.4.0
+mongomock-motor>=0.0.30
+qdrant-client>=1.12.0
+
+# ---- LLM ----
+openai>=1.50.0
+numpy>=1.26.0
+
+# ---- Demo UI ----
+streamlit>=1.46.0
+requests>=2.32.0
+
+# ---- Tests ----
+pytest>=8.0.0
+httpx>=0.27.0

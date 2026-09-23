@@ -7,7 +7,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from models import ProcessingEnum
 
 class ProcessController(BaseController):
-    
+
     def __init__(self, project_id: str):
         super().__init__()
         self.project_id = project_id
@@ -23,9 +23,12 @@ class ProcessController(BaseController):
             file_id
         )
 
+        if not os.path.exists(file_path):
+            return None
+
         if file_ext == ProcessingEnum.TXT.value:
             return TextLoader(file_path, encoding="utf-8")
-        
+
         if file_ext == ProcessingEnum.PDF.value:
             return PyMuPDFLoader(file_path)
 
@@ -37,14 +40,23 @@ class ProcessController(BaseController):
             return None
         return loader.load()
 
-    def process_file_content(self, file_content: list, file_id: str, chunk_size: int = 100, overlap: int = 20):
+    def process_file_content(self, file_content: list, file_id: str, chunk_size: int = 800, overlap: int = 100):
+        if not file_content:
+            return None
+
         text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=chunk_size,
-            chunk_overlap=overlap,
+            chunk_overlap=min(overlap, chunk_size - 1),
             length_function=len
         )
-        
-        # استخدام create_documents مباشرة مع محتوى الملف و metadata الخاصة به
+
         chunks = text_splitter.split_documents(file_content)
 
-        return chunks
+        # keep only useful, JSON-friendly metadata and hide the absolute server path
+        for chunk in chunks:
+            metadata = {"source": file_id}
+            if "page" in chunk.metadata:
+                metadata["page"] = int(chunk.metadata["page"]) + 1
+            chunk.metadata = metadata
+
+        return [chunk for chunk in chunks if chunk.page_content.strip()]
