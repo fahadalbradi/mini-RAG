@@ -8,9 +8,7 @@ services:
       - ./mongodb:/data/db
     networks:
       - backend
-
     restart: always
 
-  network:
-    backend:
-    
+networks:
+  backend:
