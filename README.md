@@ -182,11 +182,8 @@ streamlit run streamlit_app.py
 Open **http://localhost:8501**. 🎉
 
 > [!TIP]
-> Prefer to stay in the repository root? These are equivalent:
-> ```bash
-> uvicorn main:app --app-dir source --reload --port 8000
-> streamlit run source/streamlit_app.py
-> ```
+> **One-command demo:** from the repository root, `streamlit run streamlit_app.py` starts the API for you when it isn't already running (logs go to `api.log`), then opens the UI.
+> To run the API yourself from the root instead: `uvicorn main:app --app-dir source --reload --port 8000`.
 
 > [!TIP]
 > If the API runs somewhere else, set `MINIRAG_API_URL` before starting Streamlit, or change the **API URL** field in the sidebar.
