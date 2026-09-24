@@ -38,7 +38,8 @@ def start_api():
         time.sleep(0.5)
     return process
 
-if os.getenv("MINIRAG_API_URL") is None:  # only auto-start the local API
+if os.getenv("MINIRAG_API_URL") is None and not api_is_up():  # only auto-start the local API
+    start_api.clear()  # the API we started earlier (or an external one) has stopped
     start_api()
 
 runpy.run_path(os.path.join(SOURCE_DIR, "streamlit_app.py"), run_name="__main__")

@@ -42,6 +42,13 @@ class QdrantDBProvider(VectorDBInterface):
 
     def delete_collection(self, collection_name: str):
         if self.is_collection_existed(collection_name):
+            # Embedded Qdrant keeps a deleted collection's points on disk and hands them back
+            # when a collection with the same name is recreated (even with a new vector size),
+            # so empty it first.
+            self.client.delete(
+                collection_name=collection_name,
+                points_selector=models.FilterSelector(filter=models.Filter()),
+            )
             return self.client.delete_collection(collection_name=collection_name)
 
     def create_collection(self, collection_name: str, embedding_size: int, do_reset: bool = False):

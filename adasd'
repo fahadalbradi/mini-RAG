@@ -1,0 +1,110 @@
+[33mcommit d06b29de4d13ebe14278e1961145409eb7384c6a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mFahad-001[m[33m)[m
+Author: fahadalbradi <Fahadalbradi10@gmail.com>
+Date:   Thu Sep 24 23:28:30 2026 +0300
+
+    d
+
+[33mcommit 8eaca11b2a8edb738ce97c1504163f3ffc4fde2f[m[33m ([m[1;31morigin/Fahad-001[m[33m)[m
+Author: fahadalbradi <Fahadalbradi10@gmail.com>
+Date:   Wed Sep 23 20:53:37 2026 +0300
+
+    Complete RAG pipeline: indexing, search, answers + Streamlit demo
+
+[33mcommit 693653d8073450c591bd1c21a2d19bf415a24e22[m[33m ([m[1;32mmain[m[33m)[m
+Merge: e60f768 7158459
+Author: fahadalbradi <fahadalbradi10@gmail.com>
+Date:   Sun Aug 9 21:21:20 2026 +0300
+
+    Merge pull request #4 from fahadalbradi/tut-007
+    
+    Tut 007
+
+[33mcommit 7158459a00fb1e77736fe2b158b167367cbcfb1f[m[33m ([m[1;31morigin/tut-007[m[33m)[m
+Author: Fahad <Fahadalbradi10@gmail.com>
+Date:   Thu Aug 6 14:23:58 2026 +0300
+
+    MongoDP (need test)
+
+[33mcommit 1089d549536192803c2ea65b278b0c6314c092b2[m[33m ([m[1;31morigin/tut-006[m[33m)[m
+Author: Fahad <Fahadalbradi10@gmail.com>
+Date:   Tue Aug 4 15:08:17 2026 +0300
+
+    fileChunk
+
+[33mcommit ee86f22e26b34469464de4c32ee332b87bb5e91f[m[33m ([m[1;31morigin/tut-005[m[33m)[m
+Author: Fahad <Fahadalbradi10@gmail.com>
+Date:   Tue Aug 4 14:07:35 2026 +0300
+
+    lastmodiiiiii
+
+[33mcommit ea77cf58af44d0f3cf672f1519a0ba3bec5a5dc7[m
+Author: Fahad <Fahadalbradi10@gmail.com>
+Date:   Tue Aug 4 11:11:46 2026 +0300
+
+    modyfi app
+
+[33mcommit e60f7689e1a632afbe2888ad0a6f9e16dfe80171[m
+Merge: 3180320 bad3be2
+Author: fahadalbradi <fahadalbradi10@gmail.com>
+Date:   Mon Aug 3 17:59:40 2026 +0300
+
+    Merge pull request #2 from fahadalbradi/tut-004
+    
+    a lot
+
+[33mcommit 145d1c372e0b992b849628008da1138a8d4bf9d3[m
+Author: Fahad <Fahadalbradi10@gmail.com>
+Date:   Mon Aug 3 13:13:51 2026 +0300
+
+    chunk
+
+[33mcommit bad3be2960abcfbb4cc389106ac0b03864d8dc57[m[33m ([m[1;31morigin/tut-004[m[33m)[m
+Author: Fahad <Fahadalbradi10@gmail.com>
+Date:   Sun Aug 2 15:12:48 2026 +0300
+
+    a lot
+
+[33mcommit 3180320332f92b465800c425da202d193cc2ef9a[m
+Merge: 19104e2 c4dc1e3
+Author: fahadalbradi <fahadalbradi10@gmail.com>
+Date:   Sun Aug 2 14:21:52 2026 +0300
+
+    Merge pull request #1 from fahadalbradi/tut-004
+    
+    modify
+
+[33mcommit c4dc1e384af118b7eb31dd44aa8c8fea2531a697[m
+Author: Fahad <Fahadalbradi10@gmail.com>
+Date:   Sun Aug 2 14:20:24 2026 +0300
+
+    modify
+
+[33mcommit 19104e2dce3ed44be3fd5342442e3fae663c0fc3[m
+Author: fahadalbradi <fahadalbradi10@gmail.com>
+Date:   Sat Aug 1 17:26:01 2026 +0300
+
+    create assets directory
+
+[33mcommit 60cc31ef9474774bf4f6616ed918513362173f69[m
+Author: fahadalbradi <fahadalbradi10@gmail.com>
+Date:   Sat Aug 1 17:19:30 2026 +0300
+
+    UPDATE requrment add FastAPI
+
+[33mcommit 8ae4be4490d777b67431ab5b86560bc67650668f[m
+Author: fahadalbradi <fahadalbradi10@gmail.com>
+Date:   Sat Aug 1 17:18:47 2026 +0300
+
+    update README
+
+[33mcommit b9543279e20beb36a4ea5346c48aa758481ef699[m
+Author: fahadalbradi <fahadalbradi10@gmail.com>
+Date:   Sat Aug 1 16:53:59 2026 +0300
+
+    update .gitignore
+
+[33mcommit abbfbaa7ad1708e4645a1716724e0991f5a3b6f5[m
+Author: fahadalbradi <fahadalbradi10@gmail.com>
+Date:   Sat Aug 1 15:29:46 2026 +0300
+
+    Add files via upload
